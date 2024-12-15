@@ -12,6 +12,6 @@ class MyImages{
 
   static const String googleImage = 'assets/images/login/google.png';
   static const String facebookImage = 'assets/images/login/facebook.png';
-
-
+  static const String verifyPhone = 'assets/images/login/verify.gif';
+  static const String successVerification = 'assets/images/login/success_verification.gif';
 }

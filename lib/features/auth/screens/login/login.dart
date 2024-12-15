@@ -4,7 +4,6 @@ import 'package:ecommerceapp/common/styles/spacing_styles.dart';
 import 'package:ecommerceapp/features/auth/screens/login/widgets/login_form.dart';
 import 'package:ecommerceapp/features/auth/screens/login/widgets/login_header.dart';
 import 'package:ecommerceapp/utils/constant/sizes.dart';
-import 'package:ecommerceapp/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -12,7 +11,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = MyHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -21,7 +19,7 @@ class LoginScreen extends StatelessWidget {
             children: [
               MyLoginHeader(),
               MyLoginForm(),
-              MyLoginDivider(dark: dark),
+              MyLoginDivider(),
               const SizedBox(height: MySizes.spaceBtwSections),
               MySocialButtons(),
             ],

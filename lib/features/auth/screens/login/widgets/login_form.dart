@@ -1,7 +1,9 @@
-
+import 'package:ecommerceapp/features/auth/screens/signUp/sign_up.dart';
+import 'package:ecommerceapp/features/shop/screens/home_screen.dart';
 import 'package:ecommerceapp/utils/constant/sizes.dart';
 import 'package:ecommerceapp/utils/constant/text_string.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class MyLoginForm extends StatelessWidget {
@@ -13,8 +15,7 @@ class MyLoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-            vertical: MySizes.spaceBtwSections),
+        padding: const EdgeInsets.symmetric(vertical: MySizes.spaceBtwSections),
         child: Column(
           children: [
             TextFormField(
@@ -42,7 +43,7 @@ class MyLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.offAll(() => HomeScreen()),
                 child: Text(MyTexts.signIn),
               ),
             ),
@@ -50,7 +51,7 @@ class MyLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const SignUpScreen()),
                 child: Text(MyTexts.createAccount),
               ),
             ),

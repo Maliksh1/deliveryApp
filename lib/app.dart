@@ -14,6 +14,8 @@ class EcommerceApp extends StatelessWidget {
       darkTheme: EcommerceTheme.darkTheme,
       debugShowCheckedModeBanner: false,
       home: const OnBoardingScreen(),
+      routes: {
+      },
     );
   }
 }

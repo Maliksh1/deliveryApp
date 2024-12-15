@@ -1,19 +1,17 @@
-
 import 'package:ecommerceapp/utils/constant/colors.dart';
 import 'package:ecommerceapp/utils/constant/text_string.dart';
+import 'package:ecommerceapp/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class MyLoginDivider extends StatelessWidget {
   const MyLoginDivider({
     super.key,
-    required this.dark,
   });
-
-  final bool dark;
 
   @override
   Widget build(BuildContext context) {
+    final dark = MyHelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [

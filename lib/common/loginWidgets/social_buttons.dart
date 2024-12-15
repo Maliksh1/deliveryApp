@@ -3,7 +3,6 @@ import 'package:ecommerceapp/utils/constant/colors.dart';
 import 'package:ecommerceapp/utils/constant/image_strings.dart';
 import 'package:ecommerceapp/utils/constant/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MySocialButtons extends StatelessWidget {
   const MySocialButtons({
