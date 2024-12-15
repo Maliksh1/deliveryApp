@@ -1,6 +1,5 @@
 import 'package:ecommerceapp/common/styles/spacing_styles.dart';
 import 'package:ecommerceapp/features/auth/screens/login/login.dart';
-import 'package:ecommerceapp/features/shop/screens/home_screen.dart';
 import 'package:ecommerceapp/utils/constant/image_strings.dart';
 import 'package:ecommerceapp/utils/constant/sizes.dart';
 import 'package:ecommerceapp/utils/constant/text_string.dart';
